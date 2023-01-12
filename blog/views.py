@@ -4,8 +4,8 @@ def index(request):
     posts =	Post.objects.all()
     return render(
         request,	
-        'blog/index.html’,
+        'blog/index.html',
         {
-            'posts':	posts
+            'posts': posts
         }
     )
