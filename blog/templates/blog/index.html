@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Profile</title>
+    </head>
+    <body>
+        <div style="text-align : center;">
+            <h1>거북이<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA2MjNfMTkx%2FMDAxNTkyODkyMDQ0NzYy.IusHeOBu6nkMU80XWcm0Xsoh5dz8BinSDaDigjHNgw0g.P-yDjx070FyYnDTXiL_8sOzH9WWFD_d_LgTSU-VyZDsg.PNG.topcareamc%2FKakaoTalk_20200623_133129226.png&type=sc960_832"
+                style="width:30px; height:30px;">
+            </h1>
+
+            {% for p in posts %}
+            <hr>
+            <h2> <a href="{{ p.get_absolute_url }}"> {{ p.title }} </a></h2>
+            <p> {{ p.content }} </p>
+            {% endfor %}
+        </div>
+    </body>
+<html>

@@ -8,3 +8,9 @@ class Post(models.Model):
 #	author는 추후 작성
 def __str__(self):
     return f'[{self.pk}]{self.title}'
+
+def get_absolute_url(self):
+    if
+    glob 
+    
+    return f'/blog/{self.pk}/'
